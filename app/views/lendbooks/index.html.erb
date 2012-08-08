@@ -1,0 +1,38 @@
+<h1>图书借阅清单</h1>
+
+<table>
+  <tr>
+    <th>借阅人</th>
+    <th>图书名称</th>
+    <th>借阅日</th>
+    <th>返还日</th>
+    <th>状态</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lendbooks.each do |lendbook| %>
+  <tr>
+    <td><%= lendbook.employee.name %></td>
+    <td><%= lendbook.book.name %></td>
+    <td><%= lendbook.date %></td>
+    <td><%= lendbook.returndate %></td>
+    <td>
+      <% ["借阅中", "已经返还", "丢失"].each_with_index do |content, index| %>
+          <% if (index+1).to_s==lendbook.status then %>
+              <%= content %>
+          <% end %>
+      <%end%>
+
+    </td>
+    <td><%= link_to 'Show', lendbook %></td>
+    <td><%= link_to 'Edit', edit_lendbook_path(lendbook) %></td>
+    <td><%= link_to 'Destroy', lendbook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lendbook', new_lendbook_path %>

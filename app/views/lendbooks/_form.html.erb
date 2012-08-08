@@ -1,0 +1,41 @@
+<%= form_for(@lendbook) do |f| %>
+  <% if @lendbook.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lendbook.errors.count, "error") %> prohibited this lendbook from being saved:</h2>
+
+      <ul>
+      <% @lendbook.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    借书人
+    <%= f.select :employee_id,Employee.all.collect {|p| [ p.name, p.id ] }%>
+
+  </div>
+  <div class="field">
+   书名
+    <%= f.select :book_id,Book.all.collect {|p| [ p.name, p.id ] }%>
+  </div>
+
+  <div class="field">
+    借阅日   <br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    预计还书日     <br />
+    <%= f.date_select :returndate %>
+  </div>
+    <div class="field">
+      当前状态     <br />
+      <%= f.select :status, [["借阅中", 1], ["已经返还", 2], ["丢失", 3]] %>
+    </div>
+
+
+    <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

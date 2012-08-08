@@ -1,0 +1,27 @@
+<h1>部门列表</h1>
+
+<table>
+  <tr>
+    <th>名称</th>
+    <th>简称</th>
+    <th>说明</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @departments.each do |department| %>
+  <tr>
+    <td><%= department.name %></td>
+    <td><%= department.title %></td>
+    <td><%= department.description %></td>
+    <td><%= link_to '查看', department %></td>
+    <td><%= link_to '编辑', edit_department_path(department) %></td>
+    <td><%= link_to '删除', department, method: :delete, data: { confirm: '您确认杀出么?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Department', new_department_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  employee: 
+  book: 
+  lend: MyString
+  date: 2012-08-08
+  returndate: 2012-08-08
+
+two:
+  employee: 
+  book: 
+  lend: MyString
+  date: 2012-08-08
+  returndate: 2012-08-08

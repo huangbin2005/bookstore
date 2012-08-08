@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>姓名:</b>
+  <%= @employee.name %>
+</p>
+
+<p>
+  <b>性别:</b>
+  <% ["男", "女", "保密"].each_with_index do |content, index| %>
+      <% if (index+1).to_s==@employee.gender then %>
+          <%= content %>
+      <% end %>
+  <%end%>
+</p>
+
+<p>
+  <b>部门:</b>
+  <%= @employee.department.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>
