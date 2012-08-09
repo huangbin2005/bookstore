@@ -1,20 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <h1>图书管理</h1>
+  <p id="notice"><%= notice %></p>
+</div>
 
-<p>
-  <b>书名:</b>
-  <%= @book.name %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong>书名:</strong></dt>
+  <dd><%= @book.name %></dd>
 
-<p>
-  <b>Isbn:</b>
-  <%= @book.isbn %>
-</p>
+  <dt><strong>Isbn:</strong></dt>
+  <dd><%= @book.isbn %></dd>
 
-<p>
-  <b>封面:</b>
-      <%= image_tag @book.picatt.url %>
-</p>
+  <dt><strong>封面:</strong></dt>
+  <dd> <%= image_tag @book.picatt.url %></dd>
+</dl>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              book_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_book_path(@book), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              book_path(@book),
+              :method => 'delete',
+              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+              :class => 'btn btn-danger' %>
+</div>
 
-
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
