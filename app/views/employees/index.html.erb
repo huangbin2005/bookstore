@@ -2,6 +2,8 @@
 <div class="page-header">
   <h1>人员清单</h1>
 </div>
+<%= link_to '新建人员', new_employee_path , :class => 'btn   btn-primary'%>
+
 <table class="table table-striped">
   <thead>
   <tr>
@@ -29,12 +31,11 @@
           <%end%>
         </td>
         <td><%= employee.department.name %></td>
-        <td><%= link_to '查看', employee , :class => 'btn btn-mini btn-danger'%>
-          <%= link_to '编辑', edit_employee_path(employee) , :class => 'btn btn-mini btn-danger'%>
+        <td><%= link_to '查看', employee , :class => 'btn btn-mini '%>
+          <%= link_to '编辑', edit_employee_path(employee) , :class => 'btn btn-mini '%>
           <%= link_to '删除', employee, method: :delete, data: {confirm: '确认么?'} , :class => 'btn btn-mini btn-danger'%></td>
       </tr>
   <% end %>
 </table>
 
 
-<%= link_to '新建人员', new_employee_path , :class => 'btn btn-mini btn-danger'%>

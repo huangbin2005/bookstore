@@ -2,7 +2,7 @@
 <div class="page-header">
   <h1>用户管理</h1>
 </div>
-<%= link_to '创建新用户', :controller => "users", :action => "new" , :class => 'btn btn-mini btn-danger'  %>
+<%= link_to '创建新用户', :controller => "users", :action => "new" , :class => 'btn   btn-primary'  %>
 
 <table class="table table-striped">
   <thead>
@@ -30,8 +30,8 @@
           <% end %>
 
         </td>
-        <td><%= link_to '查看', user , :class => 'btn btn-mini btn-danger'%>
-          <%= link_to '编辑', edit_user_path(user) , :class => 'btn btn-mini btn-danger'%>
+        <td><%= link_to '查看', user , :class => 'btn btn-mini '%>
+          <%= link_to '编辑', edit_user_path(user) , :class => 'btn btn-mini '%>
           <%= link_to '删除', user, :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger' %></td>
       </tr>
   <% end %>
