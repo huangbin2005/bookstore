@@ -29,9 +29,9 @@
           <%end%>
         </td>
         <td><%= employee.department.name %></td>
-        <td><%= link_to '查看', employee , :class => 'btn btn-mini btn-danger'%></td>
-        <td><%= link_to '编辑', edit_employee_path(employee) , :class => 'btn btn-mini btn-danger'%></td>
-        <td><%= link_to '删除', employee, method: :delete, data: {confirm: '确认么?'} , :class => 'btn btn-mini btn-danger'%></td>
+        <td><%= link_to '查看', employee , :class => 'btn btn-mini btn-danger'%>
+          <%= link_to '编辑', edit_employee_path(employee) , :class => 'btn btn-mini btn-danger'%>
+          <%= link_to '删除', employee, method: :delete, data: {confirm: '确认么?'} , :class => 'btn btn-mini btn-danger'%></td>
       </tr>
   <% end %>
 </table>

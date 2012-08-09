@@ -2,6 +2,8 @@
 <div class="page-header">
   <h1>图书清单</h1>
 </div>
+<%= link_to '新建书籍', new_book_path, :class => 'btn btn-primary' %>
+
 <table class="table table-striped">
   <thead>
   <tr>
@@ -25,9 +27,9 @@
         <td>
           <%= image_tag book.picatt.url(:thumb) %>
         </td>
-        <td><%= link_to '查看', book, :class => 'btn btn-mini btn-danger' %></td>
-        <td><%= link_to '编辑', edit_book_path(book), :class => 'btn btn-mini btn-danger' %></td>
-        <td><%= link_to '删除', book, method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-mini btn-danger' %></td>
+        <td><%= link_to '查看', book, :class => 'btn btn-mini btn-danger' %>
+          <%= link_to '编辑', edit_book_path(book), :class => 'btn btn-mini btn-danger' %>
+          <%= link_to '删除', book, method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-mini btn-danger' %></td>
       </tr>
   <% end %>
   </tbody>
@@ -36,4 +38,3 @@
 
 <br/>
 
-<%= link_to '新建书籍', new_book_path, :class => 'btn btn-primary' %>

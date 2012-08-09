@@ -24,9 +24,9 @@
         <td><%= department.name %></td>
         <td><%= department.title %></td>
         <td><%= department.description %></td>
-        <td><%= link_to '查看', department, :class => 'btn btn-mini btn-danger' %></td>
-        <td><%= link_to '编辑', edit_department_path(department), :class => 'btn btn-mini btn-danger' %></td>
-        <td><%= link_to '删除', department, method: :delete, data: {confirm: '您确认杀出么?'}, :class => 'btn btn-mini btn-danger' %></td>
+        <td><%= link_to '查看', department, :class => 'btn btn-mini btn-danger' %>
+          <%= link_to '编辑', edit_department_path(department), :class => 'btn btn-mini btn-danger' %>
+          <%= link_to '删除', department, method: :delete, data: {confirm: '您确认杀出么?'}, :class => 'btn btn-mini btn-danger' %></td>
       </tr>
   <% end %>
   </tbody>

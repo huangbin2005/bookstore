@@ -55,7 +55,7 @@
 
               <li class="nav nav-list"><%= current_user.email %> </li>
 
-        <% end -%>
+          <% end -%>
           <% unless user_signed_in? -%>
               <!--<%= link_to '注册', new_user_registration_path %> |-->
               <li><%= link_to '登录', new_user_session_path %></li>
@@ -78,15 +78,17 @@
         <div class="well sidebar-nav">
           <h3>功能说明</h3>
           <ul class="nav nav-list">
-            <li class="nav-header">功能菜单</li>
             <% if user_signed_in? -%>
 
+                <li class="nav-header">管理菜单</li>
 
                 <li> <%= link_to "部门管理", departments_path %>  </li>
                 <li> <%= link_to "人员管理", employees_path %>   </li>
                 <li> <%= link_to "书籍管理", books_path %>       </li>
-                <li> <%= link_to "书籍借阅", lendbooks_path %>    </li>
                 <li> <%= link_to "登录用户管理", users_path %>     </li>
+                <li class="nav-header">功能菜单</li>
+                <li> <%= link_to "书籍借阅", lendbooks_path %>    </li>
+
             <% end -%>
           </ul>
         </div>
@@ -99,7 +101,7 @@
   <!--/content-->
 
   <footer>
-    <p>&copy; charmingsoft 2012 @beijing  by huangbin</p>
+    <p>&copy; charmingsoft 2012 @beijing by huangbin</p>
   </footer>
 </div>
 <!-- /container -->
