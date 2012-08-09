@@ -1,27 +1,38 @@
-<h1>部门列表</h1>
-
-<table>
+<%- model_class = Book -%>
+<div class="page-header">
+  <h1>部门列表</h1>
+</div>
+<table class="table table-striped">
+  <thead>
   <tr>
+    <th><%= model_class.human_attribute_name(:id) %></th>
+
     <th>名称</th>
     <th>简称</th>
     <th>说明</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><%= t '.actions', :default => t("helpers.actions") %></th>
   </tr>
+  </thead>
 
-<% @departments.each do |department| %>
-  <tr>
-    <td><%= department.name %></td>
-    <td><%= department.title %></td>
-    <td><%= department.description %></td>
-    <td><%= link_to '查看', department %></td>
-    <td><%= link_to '编辑', edit_department_path(department) %></td>
-    <td><%= link_to '删除', department, method: :delete, data: { confirm: '您确认杀出么?' } %></td>
-  </tr>
-<% end %>
+  <tbody>
+
+
+  <% @departments.each do |department| %>
+      <tr>
+        <td><%= link_to department.id, department_path(department) %></td>
+
+        <td><%= department.name %></td>
+        <td><%= department.title %></td>
+        <td><%= department.description %></td>
+        <td><%= link_to '查看', department, :class => 'btn btn-mini btn-danger' %></td>
+        <td><%= link_to '编辑', edit_department_path(department), :class => 'btn btn-mini btn-danger' %></td>
+        <td><%= link_to '删除', department, method: :delete, data: {confirm: '您确认杀出么?'}, :class => 'btn btn-mini btn-danger' %></td>
+      </tr>
+  <% end %>
+  </tbody>
+
 </table>
 
-<br />
+<br/>
 
-<%= link_to 'New Department', new_department_path %>
+<%= link_to '新建部门', new_department_path, :class => 'btn btn-mini btn-danger' %>

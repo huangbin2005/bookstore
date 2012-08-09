@@ -1,29 +1,39 @@
-<h1>图书清单</h1>
-
-<table>
+<%- model_class = Book -%>
+<div class="page-header">
+  <h1>图书清单</h1>
+</div>
+<table class="table table-striped">
+  <thead>
   <tr>
+    <th><%= model_class.human_attribute_name(:id) %></th>
+
     <th>书名</th>
     <th>ISBN</th>
     <th>图片</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><%= t '.actions', :default => t("helpers.actions") %></th>
   </tr>
+  </thead>
 
-<% @books.each do |book| %>
-  <tr>
-    <td><%= book.name %></td>
-    <td><%= book.isbn %></td>
-    <td>
-      <%= image_tag book.picatt.url(:thumb) %>
-    </td>
-    <td><%= link_to '查看', book %></td>
-    <td><%= link_to '编辑', edit_book_path(book) %></td>
-    <td><%= link_to '删除', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <tbody>
+
+  <% @books.each do |book| %>
+      <tr>
+        <td><%= link_to book.id, book_path(book) %></td>
+
+        <td><%= book.name %></td>
+        <td><%= book.isbn %></td>
+        <td>
+          <%= image_tag book.picatt.url(:thumb) %>
+        </td>
+        <td><%= link_to '查看', book, :class => 'btn btn-mini btn-danger' %></td>
+        <td><%= link_to '编辑', edit_book_path(book), :class => 'btn btn-mini btn-danger' %></td>
+        <td><%= link_to '删除', book, method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-mini btn-danger' %></td>
+      </tr>
+  <% end %>
+  </tbody>
+
 </table>
 
-<br />
+<br/>
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to '新建书籍', new_book_path, :class => 'btn btn-primary' %>

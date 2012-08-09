@@ -1,17 +1,24 @@
-<h1>雇员清单</h1>
-
-<table>
+<%- model_class = Book -%>
+<div class="page-header">
+  <h1>人员清单</h1>
+</div>
+<table class="table table-striped">
+  <thead>
   <tr>
+    <th><%= model_class.human_attribute_name(:id) %></th>
+
     <th>姓名</th>
     <th>性别</th>
     <th>部门</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><%=t '.actions', :default => t("helpers.actions") %></th>
   </tr>
+  </thead>
 
+  <tbody>
   <% @employees.each do |employee| %>
       <tr>
+        <td><%= link_to employee.id, employee_path(employee) %></td>
+
         <td><%= employee.name %></td>
         <td>
 
@@ -22,13 +29,12 @@
           <%end%>
         </td>
         <td><%= employee.department.name %></td>
-        <td><%= link_to '查看', employee %></td>
-        <td><%= link_to '编辑', edit_employee_path(employee) %></td>
-        <td><%= link_to '删除', employee, method: :delete, data: {confirm: '确认么?'} %></td>
+        <td><%= link_to '查看', employee , :class => 'btn btn-mini btn-danger'%></td>
+        <td><%= link_to '编辑', edit_employee_path(employee) , :class => 'btn btn-mini btn-danger'%></td>
+        <td><%= link_to '删除', employee, method: :delete, data: {confirm: '确认么?'} , :class => 'btn btn-mini btn-danger'%></td>
       </tr>
   <% end %>
 </table>
 
-<br/>
 
-<%= link_to 'New Employee', new_employee_path %>
+<%= link_to '新建人员', new_employee_path , :class => 'btn btn-mini btn-danger'%>
