@@ -6,7 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/departments/index.html.erb" afterPath="$PROJECT_DIR$/app/views/departments/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/employees/index.html.erb" afterPath="$PROJECT_DIR$/app/views/employees/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/lendbooks/index.html.erb" afterPath="$PROJECT_DIR$/app/views/lendbooks/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
     </list>
     <ignored path="bookstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/books/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="74" selection-start="788" selection-end="788" vertical-scroll-proportion="-18.56">
+            <state line="4" column="17" selection-start="93" selection-end="93" vertical-scroll-proportion="0.113879">
               <folding />
             </state>
           </provider>
@@ -46,7 +45,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/departments/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="86" selection-start="825" selection-end="825" vertical-scroll-proportion="-12.88">
+            <state line="5" column="17" selection-start="77" selection-end="180" vertical-scroll-proportion="-3.2">
               <folding />
             </state>
           </provider>
@@ -55,7 +54,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/employees/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="83" selection-start="997" selection-end="997" vertical-scroll-proportion="-14.16">
+            <state line="4" column="7" selection-start="76" selection-end="177" vertical-scroll-proportion="-2.56">
               <folding />
             </state>
           </provider>
@@ -73,16 +72,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/lendbooks/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="82" selection-start="1131" selection-end="1131" vertical-scroll-proportion="-14.16">
+            <state line="4" column="16" selection-start="78" selection-end="181" vertical-scroll-proportion="-2.56">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="61" selection-start="734" selection-end="734" vertical-scroll-proportion="0.62633455">
+            <state line="9" column="76" selection-start="285" selection-end="285" vertical-scroll-proportion="-5.76">
               <folding />
             </state>
           </provider>
@@ -130,11 +129,11 @@
         <option value="$PROJECT_DIR$/app/views/book/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/books/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/departments/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/employees/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/lendbooks/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/lendbooks/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/employees/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/departments/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/books/index.html.erb" />
       </list>
     </option>
   </component>
@@ -365,46 +364,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -785,37 +744,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/books/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="74" selection-start="788" selection-end="788" vertical-scroll-proportion="-18.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/departments/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="86" selection-start="825" selection-end="825" vertical-scroll-proportion="-12.88">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/employees/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="83" selection-start="997" selection-end="997" vertical-scroll-proportion="-14.16">
+        <state line="9" column="76" selection-start="285" selection-end="285" vertical-scroll-proportion="-5.76">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/lendbooks/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="82" selection-start="1131" selection-end="1131" vertical-scroll-proportion="-14.16">
+        <state line="4" column="16" selection-start="78" selection-end="181" vertical-scroll-proportion="-2.56">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/employees/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="61" selection-start="734" selection-end="734" vertical-scroll-proportion="0.62633455">
+        <state line="4" column="7" selection-start="76" selection-end="177" vertical-scroll-proportion="-2.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/departments/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="77" selection-end="180" vertical-scroll-proportion="-3.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/books/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="93" selection-end="93" vertical-scroll-proportion="0.113879">
           <folding />
         </state>
       </provider>

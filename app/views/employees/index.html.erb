@@ -2,7 +2,7 @@
 <div class="page-header">
   <h1>人员清单</h1>
 </div>
-<%= link_to '新建人员', new_employee_path , :class => 'btn   btn-primary'%>
+<%= link_to '新建人员', :controller => "employees", :action => "new" , :class => 'btn   btn-primary'  %>
 
 <table class="table table-striped">
   <thead>

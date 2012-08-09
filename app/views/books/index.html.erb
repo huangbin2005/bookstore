@@ -2,7 +2,7 @@
 <div class="page-header">
   <h1>图书清单</h1>
 </div>
-<%= link_to '新建书籍', new_book_path, :class => 'btn  btn-primary' %>
+<%= link_to '新建书籍', :controller => "books", :action => "new" , :class => 'btn   btn-primary'  %>
 
 <table class="table table-striped">
   <thead>

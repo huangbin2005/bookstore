@@ -3,7 +3,7 @@
   <h1>部门列表</h1>
 </div>
 
-<%= link_to '新建部门', new_department_path, :class => 'btn   btn-primary' %>
+<%= link_to '新建部门', :controller => "departments", :action => "new" , :class => 'btn   btn-primary'  %>
 
 <table class="table table-striped">
   <thead>
