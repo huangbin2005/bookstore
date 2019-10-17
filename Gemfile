@@ -21,7 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem "paperclip", "~> 3.0"
+gem "paperclip", "~> 4.3"
 gem 'devise'
 gem "cancan"
 gem "twitter-bootstrap-rails"
